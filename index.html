@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S Abhikash | Portfolio</title>
+  <meta name="description" content="E-Portfolio of S Abhikash, 2nd Year BE CSE Student. Aspiring Software Engineer and Web Developer.">
+  
+  <!-- Google Fonts: Lora (Serif) & Inter (Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">S Abhikash</a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link nav-btn">Contact Me</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+          <!-- Moon Icon (for Light Mode) -->
+          <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (for Dark Mode) -->
+          <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12" id="line1"></line>
+            <line x1="3" y1="6" x2="21" y2="6" id="line2"></line>
+            <line x1="3" y1="18" x2="21" y2="18" id="line3"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Matches your reference image layout) -->
+  <section class="hero-section" id="home">
+    <div class="hero-container">
+      
+      <!-- Left Column: Bio & Information -->
+      <div class="hero-left reveal">
+        <span class="greeting">Hello, I'm</span>
+        <h1 class="hero-name">S ABHIKASH</h1>
+        <h2 class="hero-role">BE CSE STUDENT & Front-end Developer</h2>
+        <div class="role-divider"></div>
+        <p class="hero-bio">
+          I'm a Computer Science Engineering student passionate about building meaningful digital experiences through code. With a strong foundation in programming and a growing expertise in web development, I enjoy creating responsive applications, solving complex problems, and continuously learning new technologies that shape the future of software.
+        </p>
+
+        <!-- Quick Contacts matching the reference image layout -->
+        <div class="hero-contact-list">
+          <div class="contact-item">
+            <div class="contact-icon-wrapper">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <a href="mailto:xbhikxsh@gmail.com" class="contact-text">xbhikxsh@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <a href="https://github.com/Abhikash S" target="_blank" rel="noopener" class="contact-text">github.com/Abhikash S</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <span class="contact-text">Trichy, Tamil Nadu, India</span>
+          </div>
+        </div>
+
+        <!-- Social Icons matching the reference style -->
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/abhikash" target="_blank" rel="noopener" class="social-circle" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/abhikash" target="_blank" rel="noopener" class="social-circle" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://leetcode.com/Abhikash S" target="_blank" rel="noopener" class="social-circle" aria-label="LeetCode">
+            <!-- Custom LeetCode SVG -->
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13.483 0a1.374 1.374 0 0 0-.961.414l-9.75 9.75a1.374 1.374 0 0 0 0 1.942l4.875 4.875a1.374 1.374 0 0 0 1.943 0l9.75-9.75a1.374 1.374 0 0 0 0-1.942L14.444.414A1.374 1.374 0 0 0 13.483 0zm.012 2.378l3.447 3.448-8.779 8.779-3.447-3.448 8.779-8.779zm-4.329 11.5L5.72 10.43l3.447-3.448 3.448 3.448-3.448 3.448zm7.778-7.778l3.448 3.447-8.779 8.78-3.448-3.448 8.779-8.779zM19.78 12.5a1.374 1.374 0 0 0-1.943 0l-4.875 4.875a1.374 1.374 0 0 0 0 1.942l4.875 4.875a1.374 1.374 0 0 0 1.943 0l4.875-4.875a1.374 1.374 0 0 0 0-1.942l-4.875-4.875zM17.84 15.93l3.447 3.448-3.447 3.447-3.448-3.447 3.448-3.448z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Profile Avatar on custom background (Matches reference layout) -->
+      <div class="hero-right reveal">
+        <div class="avatar-frame-container">
+          <!-- Floating decorative dots -->
+          <div class="dot-grid-decor"></div>
+          
+          <!-- Curved backdrop circle -->
+          <div class="avatar-background-blob"></div>
+          
+          <div class="avatar-image-wrapper">
+            <img src="assets/Profile pic 4.jpeg" alt="S ABHIKASH Portrait" class="avatar-img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="section-container" id="certificates">
+    <div class="section-header-wrapper">
+      <div class="header-line"></div>
+      <h2 class="section-title">CERTIFICATES</h2>
+      <div class="header-line"></div>
+    </div>
+    
+    <div class="certificates-grid reveal">
+      <!-- Certificate Placeholder Card 1 -->
+      <div class="cert-card">
+        <div class="cert-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <div class="cert-info">
+          <span class="cert-issuer">unstop</span>
+          <h3 class="cert-name"><a href="https://drive.google.com/file/d/1HaBUidAsvX2yFObD4GeqbM5oyvQDjGXt/view?usp=drive_link" target="_blank" rel="noopener">HTML with AI</a></h3>
+          <p class="cert-date">Issued:July 2026</p>
+          <a href="https://drive.google.com/file/d/1HaBUidAsvX2yFObD4GeqbM5oyvQDjGXt/view?usp=drive_link" target="_blank" rel="noopener" class="cert-link">Verify Credential &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Certificate Placeholder Card 2 -->
+      <div class="cert-card">
+        <div class="cert-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <div class="cert-info">
+          <span class="cert-issuer">CSC Computer Course</span>
+          <h3 class="cert-name"><a href="https://drive.google.com/file/d/1hj3jrWZIuEcEGNo0nqbE5YszuM3TIiKA/view?usp=sharing" target="_blank" rel="noopener">Full Stack Developer</a></h3>
+          <p class="cert-date">Issued: May 2026</p>
+          <a href="https://drive.google.com/file/d/1hj3jrWZIuEcEGNo0nqbE5YszuM3TIiKA/view?usp=sharing" target="_blank" rel="noopener" class="cert-link">Verify Credential &rarr;</a>
+        </div>
+      </div>
+
+      <!--
+      <!-- Certificate Placeholder Card 3 (Dashed Add-State) -->
+      <div class="cert-card cert-card-dashed">
+        <div class="cert-icon-box dashed-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </div>
+        
+        <!-- to add extra certificate info -->
+        <!-- <div class="cert-info">
+          <span class="cert-issuer">Add New</span>
+          <h3 class="cert-name">Your Next Certificate</h3>
+          <p class="cert-date">Edit in index.html</p>
+          <span class="cert-link">Insert Link &rarr;</span>
+        </div> -->
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- Projects Section (Matches "SELECTED WORK" in reference image) -->
+  <section class="section-container" id="projects">
+    <div class="section-header-wrapper">
+      <div class="header-line"></div>
+      <h2 class="section-title">SELECTED WORK</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <!-- 3 Horizontal/Grid Projects matching reference layout -->
+    <div class="projects-grid reveal">
+      
+      <!-- Project 1 (Mobile App style card) -->
+      <div class="project-card">
+        <div class="project-preview preview-blue">
+          <!-- Deep Blue Fintech Phone visual mockup -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-screen">
+              <div class="phone-header">
+                <span class="phone-logo">PaySphere</span>
+              </div>
+              <div class="phone-balance">
+                <span class="balance-label">Total Balance</span>
+                <span class="balance-val">$14,240.50</span>
+              </div>
+              <div class="phone-chart">
+                <div class="bar" style="height: 40%"></div>
+                <div class="bar" style="height: 60%"></div>
+                <div class="bar" style="height: 80%"></div>
+                <div class="bar active" style="height: 95%"></div>
+                <div class="bar" style="height: 50%"></div>
+              </div>
+              <div class="phone-txs">
+                <div class="tx-row"></div>
+                <div class="tx-row"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3 class="project-name">Fintech Mobile App</h3>
+          <span class="project-tags">UI/UX Design / Flutter</span>
+        </div>
+      </div>
+
+      <!-- Project 2 (Web Dashboard style card) -->
+      <div class="project-card">
+        <div class="project-preview preview-teal">
+          <!-- Bright Travel Web Mockup -->
+          <div class="web-mockup-wrapper">
+            <div class="web-header">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="web-body">
+              <div class="web-hero">
+                <span class="web-title">Explore the World</span>
+                <div class="web-btn">Book Now</div>
+              </div>
+              <div class="web-destinations">
+                <div class="dest-card"></div>
+                <div class="dest-card"></div>
+                <div class="dest-card"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3 class="project-name">Travel Website</h3>
+          <span class="project-tags">Web Design / React</span>
+        </div>
+      </div>
+
+      <!-- Project 3 (Dark Dashboard style card) -->
+      <div class="project-card">
+        <div class="project-preview preview-dark">
+          <!-- Dark Admin Panel Mockup -->
+          <div class="dark-mockup-wrapper">
+            <div class="dark-sidebar">
+              <span class="sidebar-item active"></span>
+              <span class="sidebar-item"></span>
+              <span class="sidebar-item"></span>
+            </div>
+            <div class="dark-content">
+              <div class="dark-header">
+                <span class="dark-search"></span>
+                <span class="dark-avatar"></span>
+              </div>
+              <div class="dark-grid">
+                <div class="dark-box"></div>
+                <div class="dark-box"></div>
+              </div>
+              <div class="dark-terminal">
+                <span class="term-line">&gt; npm run start</span>
+                <span class="term-line text-green">Server listening on port 5000...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3 class="project-name">Developer DevTool / API</h3>
+          <span class="project-tags">Backend / Node.js / Docker</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section-container" id="skills">
+    <div class="section-header-wrapper">
+      <div class="header-line"></div>
+      <h2 class="section-title">TECHNICAL SKILLS</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="skills-wrapper reveal">
+      <!-- Languages -->
+      <div class="skills-category-card">
+        <h3 class="category-title">Languages</h3>
+        <div class="skills-list">
+          <div class="skill-tag">
+            <span class="skill-name">C++</span>
+            <span class="skill-percent">DSA Specialist</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">Java</span>
+            <span class="skill-percent">OOP Core</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">Python</span>
+            <span class="skill-percent">Scripting / ML</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">SQL</span>
+            <span class="skill-percent">Database Queries</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Tech -->
+      <div class="skills-category-card">
+        <h3 class="category-title">Web Technologies</h3>
+        <div class="skills-list">
+          <div class="skill-tag">
+            <span class="skill-name">HTML5 / CSS3</span>
+            <span class="skill-percent">Semantic & Responsive</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">ES6+ Programming</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">React.js</span>
+            <span class="skill-percent">SPA Framework</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">Node.js / Express</span>
+            <span class="skill-percent">RESTful API Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Developer Tools -->
+      <div class="skills-category-card">
+        <h3 class="category-title">Developer Tools</h3>
+        <div class="skills-list">
+          <div class="skill-tag">
+            <span class="skill-name">Git & GitHub</span>
+            <span class="skill-percent">Version Control</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">Docker</span>
+            <span class="skill-percent">Containerization</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">VS Code</span>
+            <span class="skill-percent">Primary Editor</span>
+          </div>
+          <div class="skill-tag">
+            <span class="skill-name">Linux / Bash</span>
+            <span class="skill-percent">Command Line Core</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-container contact-section" id="contact">
+    <div class="section-header-wrapper">
+      <div class="header-line"></div>
+      <h2 class="section-title">GET IN TOUCH</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="contact-grid reveal">
+      
+      <!-- Contact Info -->
+      <div class="contact-info-panel">
+        <h3 class="contact-panel-title">Let's collaborate on something awesome!</h3>
+        <p class="contact-panel-desc">
+          Whether you want to build a cool website, discuss data structures, or simply network, feel free to drop me a message.
+        </p>
+        
+        <div class="contact-badge">
+          <div class="badge-dot"></div>
+          <span>Open to Internship Opportunities</span>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required placeholder="john@example.com">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" required placeholder="Let's build a project together!">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required placeholder="Hi Abhikash, I would love to connect to discuss..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn">
+          <span>Send Message</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+
+        <div class="form-feedback" id="form-feedback"></div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">&copy; 2026 S Abhikash. Built from scratch with Passion.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#projects">Work</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
